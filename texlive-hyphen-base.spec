@@ -1,5 +1,11 @@
+# revision 23418
+# category TLCore
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-hyphen-base
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
@@ -42,6 +48,7 @@ TeXLive hyphen-base package.
 %{_texmfdir}/tex/generic/hyphen/hyphen.tex
 %{_texmfdir}/tex/generic/hyphen/hypht1.tex
 %{_texmfdir}/tex/generic/hyphen/zerohyph.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ TeXLive hyphen-base package.
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
