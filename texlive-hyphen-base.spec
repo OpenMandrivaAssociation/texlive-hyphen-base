@@ -15,6 +15,7 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-base.tar.x
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(post):	texlive-tlpkg
+Requires(post):	texlive-kpathsea.bin
 Conflicts:	texlive-texmf <= 20110705-3
 
 %description
