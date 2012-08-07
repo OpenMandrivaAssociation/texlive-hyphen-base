@@ -1,11 +1,11 @@
-# revision 26002
+# revision 26846
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-base
-Version:	20120611
+Version:	20120807
 Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
