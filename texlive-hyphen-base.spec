@@ -1,11 +1,11 @@
-# revision 26846
+# revision 31131
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-base
-Version:	20120807
+Version:	20131012
 Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
@@ -30,16 +30,16 @@ TeXLive hyphen-base package.
 
 #-----------------------------------------------------------------------
 %files
-%config(noreplace) %{_texmfdir}/tex/generic/config/language.dat
-%config(noreplace) %{_texmfdir}/tex/generic/config/language.dat.lua
-%config(noreplace) %{_texmfdir}/tex/generic/config/language.def
-%{_texmfdir}/tex/generic/config/language.us
-%{_texmfdir}/tex/generic/config/language.us.def
-%{_texmfdir}/tex/generic/config/language.us.lua
-%{_texmfdir}/tex/generic/hyphen/dumyhyph.tex
-%{_texmfdir}/tex/generic/hyphen/hyphen.tex
-%{_texmfdir}/tex/generic/hyphen/hypht1.tex
-%{_texmfdir}/tex/generic/hyphen/zerohyph.tex
+%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.dat
+%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.dat.lua
+%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.def
+%{_texmfdistdir}/tex/generic/config/language.us
+%{_texmfdistdir}/tex/generic/config/language.us.def
+%{_texmfdistdir}/tex/generic/config/language.us.lua
+%{_texmfdistdir}/tex/generic/hyphen/dumyhyph.tex
+%{_texmfdistdir}/tex/generic/hyphen/hyphen.tex
+%{_texmfdistdir}/tex/generic/hyphen/hypht1.tex
+%{_texmfdistdir}/tex/generic/hyphen/zerohyph.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,32 +48,5 @@ TeXLive hyphen-base package.
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120807-1
-+ Revision: 812303
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120611-1
-+ Revision: 804685
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120327-1
-+ Revision: 787627
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 752632
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 718638
-- texlive-hyphen-base
-- texlive-hyphen-base
-- texlive-hyphen-base
-- texlive-hyphen-base
-- texlive-hyphen-base
-
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar tex %{buildroot}%{_texmfdistdir}
