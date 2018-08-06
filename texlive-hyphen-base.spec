@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-base
 Version:	20180730
-Release:	1
+Release:	2
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -30,9 +30,9 @@ TeXLive hyphen-base package.
 
 #-----------------------------------------------------------------------
 %files
-%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.dat
-%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.dat.lua
-%config(noreplace) %{_texmfdistdir}/tex/generic/config/language.def
+%{_texmfdistdir}/tex/generic/config/language.dat
+%{_texmfdistdir}/tex/generic/config/language.dat.lua
+%{_texmfdistdir}/tex/generic/config/language.def
 %{_texmfdistdir}/tex/generic/config/language.us
 %{_texmfdistdir}/tex/generic/config/language.us.def
 %{_texmfdistdir}/tex/generic/config/language.us.lua
