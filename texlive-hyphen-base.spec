@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-base
-Version:	20180404
+Version:	20180730
 Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
