@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-base
 Version:	20180730
-Release:	2
+Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
 URL:		http://tug.org/texlive
