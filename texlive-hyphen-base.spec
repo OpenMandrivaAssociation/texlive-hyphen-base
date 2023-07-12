@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-base
-Version:	62751
-Release:	2
+Version:	66413
+Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
 URL:		http://tug.org/texlive
