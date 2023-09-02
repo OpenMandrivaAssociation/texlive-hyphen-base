@@ -1,5 +1,5 @@
 Name:		texlive-hyphen-base
-Version:	66413
+Version:	66418
 Release:	1
 Summary:	TeXLive hyphen-base package
 Group:		Publishing
